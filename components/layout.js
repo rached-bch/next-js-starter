@@ -1,4 +1,5 @@
 import Nav from "./nav";
+import "../styles/main.css";
 
 const Layout = props => {
   return (
