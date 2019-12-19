@@ -1,11 +1,10 @@
-import Nav from "../components/nav";
+import Layout from "../components/layout";
 
 const Index = () => (
-  <div>
-    <Nav></Nav>
-    <h1>Page d'accueil</h1>
-    <p>Hello Next.js</p>
-  </div>
+  <Layout>
+    <h1>Home page</h1>
+    <p>Hello world</p>
+  </Layout>
 );
 
 export default Index;
