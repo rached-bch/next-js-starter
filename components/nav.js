@@ -2,35 +2,25 @@ import Link from "next/link";
 
 const Nav = () => {
   return (
-    <div>
-      <ul>
-        <li>
-          <Link href="/">
-            <a className="nav-item">Home</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/about">
-            <a className="nav-item">About</a>
-          </Link>
-        </li>
-      </ul>
-      <style jsx>{`
-        ul {
-          list-style: none;
-        }
-        li {
-          display: inline-block;
-        }
-        .nav-item {
-          background-color: black;
-          color: white;
-          padding: 10px;
-          margin: 5px;
-          text-decoration: none;
-        }
-      `}</style>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        Navbar
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <Link href="/">
+              <a className="nav-link">Home</a>
+            </Link>
+          </li>
+          <li class="nav-item">
+            <Link href="/about">
+              <a className="nav-link">About</a>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 
