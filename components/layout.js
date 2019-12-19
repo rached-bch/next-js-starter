@@ -1,5 +1,6 @@
 import Nav from "./nav";
 import "../styles/main.css";
+import "../styles/sass/app.scss";
 
 const Layout = props => {
   return (
