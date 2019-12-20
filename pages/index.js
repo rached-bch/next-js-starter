@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import Head from "next/head";
 import fetch from "isomorphic-unfetch";
+import BookLink from "../components/bookLink";
 
 const Index = props => {
   const books = props.books;
@@ -19,7 +20,9 @@ const Index = props => {
           return (
             <div className="card" key={book.ID}>
               <div className="card-body">
-                <h5 className="card-title">{book.Title}</h5>
+                <h5 className="card-title">
+                  <BookLink id={book.ID} title={book.Title}></BookLink>
+                </h5>
                 <p className="card-text">{book.Description}</p>
               </div>
             </div>
