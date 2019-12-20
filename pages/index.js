@@ -30,7 +30,7 @@ const Index = props => {
 };
 
 Index.getInitialProps = async context => {
-  console.log({ context });
+  //console.log({ context });
   const result = await fetch(`https://fakerestapi.azurewebsites.net/api/Books`);
   const books = await result.json();
   return {
